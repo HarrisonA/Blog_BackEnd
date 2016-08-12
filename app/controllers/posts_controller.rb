@@ -62,7 +62,6 @@ class PostsController < ApplicationController
     # them from JSON API into a standard Ruby hash.
 
     def post_params
-      res = ActiveModelSerializers::Deserialization.jsonapi_parse(params)
-      res # folowup: what is "res"?
+      ActiveModelSerializers::Deserialization.jsonapi_parse(params)
     end
 end

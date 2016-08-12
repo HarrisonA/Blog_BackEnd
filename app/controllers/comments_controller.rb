@@ -61,7 +61,6 @@ class CommentsController < ApplicationController
     # them from JSON API into a standard Ruby hash.
 
     def comment_params
-      res = ActiveModelSerializers::Deserialization.jsonapi_parse(params)
-      res # folowup: what is "res"?
+      ActiveModelSerializers::Deserialization.jsonapi_parse(params)
     end
 end
