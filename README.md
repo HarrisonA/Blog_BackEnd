@@ -5,6 +5,7 @@ NOTE: This app was built for the Blog_FrontEnd App (one of my other repos).
 
 ### To install this BACK end app:
 (Ruby version 2.2 or higher, Rails 5 should be installed on your computer)
+
 1. Clone this repo.  
 
 2. cd into the "Blog_BackEnd" directory and run "bundle exec rake db:create", then "bundle exec rake db:migrate".  
