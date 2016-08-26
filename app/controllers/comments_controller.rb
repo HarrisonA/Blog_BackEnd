@@ -6,8 +6,8 @@ class CommentsController < ApplicationController
     @comments = Comment.all
 
     # ActiveModelSerializers will automatically integrate with your Rails
-    # app, so you won't need to update your controller.
-    # render json: @comments  (is all you need)
+    # app, so you won't need to update your controller routes. NOTE: Updates exist in private section below
+    # render json: @comments  (is all you need here)
     render json: @comments
   end
 

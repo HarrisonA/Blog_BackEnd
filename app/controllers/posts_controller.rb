@@ -6,8 +6,8 @@ class PostsController < ApplicationController
     @posts = Post.all
 
     # ActiveModelSerializers will automatically integrate with your Rails
-    # app, so you won't need to update your controller here.
-    # render json: @posts  (is all you need)
+    # app, so you won't need to update your controller routes.
+    # render json: @posts  (is all you need here)
     render json: @posts, comments: @comments
     # note comments is added so all the comments are displayed also on
     # the get /posts route but this optional
